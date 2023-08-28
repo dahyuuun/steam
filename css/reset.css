@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+
+:root {
+  /* colors */
+  --primary-light: #50b6ff;
+  --primary-normal: #1a9fff;
+  --primary-strong: #008ef5;
+  --primary-heavy: #0083e1;
+
+  --status-alert: #eb5147;
+  --status-caution: #fa9538;
+  --status-positive: #3dc061;
+
+  --text-strong: #fff;
+  --text-normal: #F7F7F7;
+  --text-alternative: #a5a5a5;
+  --text-assistive: #656565;
+  --text-disable: #3a3a3a;
+
+  --bg-primary: #0f0f10;
+  --bg-secondary: #1e1e1f;
+  --bg-tertiary: #333335;
+}
+
+
+
+/* Reset Style Code */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-normal);
+}
+
+ol, ul{
+  list-style: none;
+}
+
+a{ 
+  /*a 태그는 속성적으로 부모의 요소를 상속받지 않으므로 컬러에 inherit으로 설정해주어야 함.*/
+  color: inherit;
+  text-decoration: none;
+}
+
+em, strong, i, b{
+  font-style: normal;
+  font-weight: normal;
+}
+
+img{
+  display: block; /* 이미지에 공간에 생기는 것을 방지해줌. */
+}
+
+input, textarea, button, select,
+input::placeholder, textarea::placeholder{
+  border: none;
+  color: inherit;
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg-primary);
+  outline: 0;
+}
